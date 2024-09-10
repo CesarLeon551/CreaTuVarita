@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Tu Propia Varita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crea Tu Propia Varita</h1>
+    </header>
+    <main>
+        <section id="customization">
+            <h2>Personaliza Tu Varita</h2>
+            <form id="wandForm">
+                <label for="wood">Madera:</label>
+                <select id="wood" name="wood">
+                    <option value="roble">Roble</option>
+                    <option value="tejo">Tejo</option>
+                    <option value="sauce">Sauce</option>
+                    <option value="abeto">Abeto</option>
+                </select>
+
+                <label for="core">Núcleo:</label>
+                <select id="core" name="core">
+                    <option value="pluma">Pluma de Fénix</option>
+                    <option value="pelo">Pelo de Thestral</option>
+                    <option value="escama">Escama de Dragón</option>
+                    <option value="peloUnicornio">Pelo de Unicornio</option>
+                    <option value="plumaBasilisco">Pluma de Basilisco</option>
+                </select>
+
+                <label for="length">Longitud (en cm):</label>
+                <input type="number" id="length" name="length" min="20" max="45" value="30">
+
+                <label for="decorations">Adornos:</label>
+                <select id="decorations" name="decorations">
+                    <option value="nada">Ninguno</option>
+                    <option value="gemas">Gemas</option>
+                    <option value="maderaTallada">Madera Tallada</option>
+                    <option value="oro">Detalles en Oro</option>
+                </select>
+
+                <button type="button" onclick="createWand()">Generar Varita</button>
+            </form>
+        </section>
+        <section id="result">
+            <h2>Tu Varita Personalizada</h2>
+            <div id="wandDisplay" class="wand-display">
+                <div id="wand" class="wand">
+                    <div class="handle"></div>
+                    <div class="shaft"></div>
+                    <div class="tip"></div>
+                </div>
+            </div>
+            <div id="wand-story" class="wand-story"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

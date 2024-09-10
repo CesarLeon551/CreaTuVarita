@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #444;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select, input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.wand-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajustado para mejor visualización */
+}
+
+.wand {
+    width: 200px;
+    height: 20px;
+    background: #8B4513; /* Color base de la madera */
+    position: relative;
+    border-radius: 10px;
+}
+
+.handle {
+    width: 40px;
+    height: 40px;
+    background-color: #4B2D1F; /* Color del mango */
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shaft {
+    height: 100%;
+    background-color: #8B4513;
+    border-radius: 10px;
+}
+
+.tip {
+    width: 30px;
+    height: 30px;
+    background-color: #4B2D1F; /* Color de la punta */
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wand.gemas .shaft {
+    border: 2px solid #ff4500; /* Color para gemas */
+}
+
+.wand.maderaTallada .shaft {
+    background: linear-gradient(45deg, #8B4513 25%, #d2b48c 75%); /* Efecto madera tallada */
+}
+
+.wand.oro .shaft {
+    border: 2px solid #FFD700; /* Detalles en oro */
+}
+
+.wand-story {
+    margin-top: 20px;
+    font-size: 18px;
+}
